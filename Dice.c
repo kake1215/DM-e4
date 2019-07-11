@@ -3,7 +3,7 @@
 #include <time.h>
 
 int main(void){
-  srand((unsigned int)time(NULL));\
+  srand((unsigned int)time(NULL));
   char *str;
   int num1,num2,total;
   num1=rand()%6+1;
@@ -12,7 +12,7 @@ int main(void){
 
   printf("What is your name?\n");
   scanf("%s",&str);
-  printf("Hello, &s!\n",str);
+  printf("Hello, %s!\n",&str);
   
   printf("Rolling the dice..\n");
   printf("Dice 1: %d\n",num1);
@@ -26,5 +26,6 @@ int main(void){
     printf("You lost\n");
   }
 
+  printf("Good bye.\n");
   return 0;
 }
